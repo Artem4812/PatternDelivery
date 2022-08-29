@@ -28,7 +28,7 @@ public class DeliveryTest {
     }
 
     @Test
-    void shouldOrderCardDeliveryWhenValidCityNameIsEntered() {
+    void shouldOrderCardDelivery() {
         $x("//*[@data-test-id='city']//input").setValue(generateCity("ru"));
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(DataGenerator.generateDate(7));
