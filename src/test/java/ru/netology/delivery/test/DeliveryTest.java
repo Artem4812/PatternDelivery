@@ -22,7 +22,7 @@ public class DeliveryTest {
     @BeforeEach
     void setup() {
         open("http://localhost:9999");
-        Configuration.timeout = 100;
+        Configuration.timeout = 100000;
         Configuration.holdBrowserOpen = true;
 
     }
